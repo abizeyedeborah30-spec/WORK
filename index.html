@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEBORAH & ALICE | Clinic Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="clinic-container">
+        <div class="dashboard-layout">
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+                <div class="clinic-name">
+                    <h2>🏥 DEBORAH & ALICE<br><span>Clinic Management System</span></h2>
+                </div>
+                <div class="nav-menu" id="navMenu">
+                    <button class="nav-btn active" data-section="dashboard">
+                        <i class="emoji-icon">📊</i>
+                        <span>Dashboard</span>
+                    </button>
+                    <button class="nav-btn" data-section="patients">
+                        <i class="emoji-icon">👥</i>
+                        <span>Patients</span>
+                    </button>
+                    <button class="nav-btn" data-section="appointments">
+                        <i class="emoji-icon">📅</i>
+                        <span>Appointments</span>
+                    </button>
+                    <button class="nav-btn" data-section="reports">
+                        <i class="emoji-icon">📈</i>
+                        <span>Reports</span>
+                    </button>
+                    <button class="nav-btn" data-section="settings">
+                        <i class="emoji-icon">⚙️</i>
+                        <span>Settings</span>
+                    </button>
+                </div>
+                <!-- Windows activation card -->
+                <div class="activation-card">
+                    <div class="activation-warning">
+                        <span>⚠️</span>
+                        <span>Activate Windows</span>
+                    </div>
+                    <div class="activation-text">
+                        Go to Settings to activate Windows.
+                    </div>
+                </div>
+            </aside>
+
+            <!-- RIGHT MAIN SECTION -->
+            <main class="main-panel">
+                <div class="main-header">
+                    <div class="header-title" id="dynamicHeader">
+                        <h1>Dashboard</h1>
+                        <p>Welcome to your clinic dashboard</p>
+                    </div>
+                    <div class="clinic-badge">
+                        👩‍⚕️ Dr. Deborah & Alice
+                    </div>
+                </div>
+
+                <div class="content-area">
+                    <div class="dynamic-card" id="dynamicContentCard">
+                        <!-- Dynamic content will be injected here by JavaScript -->
+                        <div id="dashboardDefault">
+                            <div class="welcome-message">
+                                ✨ <strong>Welcome to DEBORAH & ALICE Clinic Management System</strong><br>
+                                Manage appointments, patients, reports, and clinic activities seamlessly.
+                            </div>
+                            <div class="stats-grid" id="initialStats">
+                                <div class="stat-card">
+                                    <div class="stat-emoji">👥</div>
+                                    <div class="stat-number">0</div>
+                                    <div>Total Patients</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-emoji">📅</div>
+                                    <div class="stat-number">0</div>
+                                    <div>Appointments</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-emoji">📊</div>
+                                    <div class="stat-number">3</div>
+                                    <div>Pending Reports</div>
+                                </div>
+                            </div>
+                            <div class="data-list">
+                                <div class="list-item">
+                                    <span>🟢 Clinic Today</span>
+                                    <span class="badge-info">Active Hours 8am-6pm</span>
+                                </div>
+                                <div class="list-item">
+                                    <span>📌 Recent Activity: No appointments yet</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
